@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let isValid = true; //validate checker
         if (username.value.trim().length < 3) {
-            messages.push('Username be  at least 3 character long.')
+            messages.push('Username must be at least 3 characters long.')
             isValid = false;
         }
 
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Password Validation
         const password = document.getElementById('password');
         if (password.value.length < 8) {
-            messages.push('Password must be at least 8 chaactor long.')
+            messages.push('Password must be at least 8 characters long.')
             isValid = false;
         }
 
@@ -41,10 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } else {
             feedbackDiv.style.color = "#dc3545";
-            feedbackDiv.textContent = messages.join(" ");
+            feedbackDiv.innerHTML = messages.join('<br>');
             // return;
         }
-        // messeges.push()
     }));
 
-})
+});
