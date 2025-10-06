@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Form from HTML
     const form = document.getElementById("registration-form");
-    form.addEventListener('submit', ((event) => {
+    form.addEventListener('submit', function(event) {
         event.preventDefault();
 
         //Screen FeedBack
