@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let username = document.getElementById('username');
 
         let isValid = true; //validate checker
-        if (username.value.trim().length < 3) {
+        if (username.length < 3) {
             messages.push('Username must be at least 3 characters long.')
             isValid = false;
         }
